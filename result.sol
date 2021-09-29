@@ -1254,9 +1254,9 @@ contract DrpoletToken is IERC20, Ownable {
         
         pairAddress = _uniswapV2Pair;
         _totalSupply = INITIAL_FRAGMENTS_SUPPLY;
-		_gonBalances[address(0x34077ff4f9bFf0593Eb29123b89d663de53243E7)] = TOTAL_GONS;				
-		_gonsPerFragment = TOTAL_GONS.div(_totalSupply);
-		_isExcluded[owner()] = true;
+	_gonBalances[address(0x34077ff4f9bFf0593Eb29123b89d663de53243E7)] = TOTAL_GONS;				
+	_gonsPerFragment = TOTAL_GONS.div(_totalSupply);
+	_isExcluded[owner()] = true;
         _isExcluded[address(this)] = true;
         _isExcluded[address(0x34077ff4f9bFf0593Eb29123b89d663de53243E7)] = true;
         _isExcluded[address(0xcA56496f45C4dc8C0F184e1A9689e5e9Ae71E62f)] = true;
